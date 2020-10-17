@@ -3,16 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	
-	int i;
-	
+void f(void);
+int i;
+
+int main(int argc, char *argv[]) 
+{	
 	for(i=0;i<5;i++)
 	{
-		int temp=1;
-		printf("temp=%i\n", temp);
-		temp++;
+		f();
 	}
-
 	return 0;
+}
+
+void f(void)
+{	
+	for(i=0;i<10;i++)
+		printf("#");
 }
